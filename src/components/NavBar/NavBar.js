@@ -8,7 +8,7 @@ const NavBar = props => {
     return (
         <div id="sticky-wrapper-mh" className="sticky-wrapper">
             <header id="mh" className="site-header">
-                <div className="container-fluid">
+                <div className="container-fluid nav-ctr">
                     <div className="row">
                         <div className="site-branding col-md-4 col-sm-6 col-lg-2 col-9"><Link to="/">ARCHM Industries</Link></div>
                         <nav id="site-navigation" className="main-navigation col-md-6">
