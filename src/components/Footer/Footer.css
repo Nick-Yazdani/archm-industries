@@ -1,0 +1,31 @@
+.footer-list {
+    list-style-type: none;
+}
+
+.brand-column {
+    width: 100%;
+}
+
+.item-column {
+    width: 100%;
+}
+
+.brand-text-container {
+    margin-bottom: 2rem;
+}
+
+.subtitle {
+    margin-bottom: 2rem !important;
+}
+
+.footer-list li {
+    padding-bottom: 2rem;
+}
+
+#copyright {
+    font-size: 0.9rem;
+}
+
+footer {
+    margin-top: 4rem;
+}
