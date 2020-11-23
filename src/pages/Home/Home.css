@@ -130,6 +130,9 @@
 
 @media only screen and (max-width: 800px) {
     .caption {
+        font-size: 1.8rem;
+    }
+    .caption .span-caption {
         font-size: 1.4rem;
     }
     .card-div {
@@ -137,6 +140,9 @@
     }
     .site-main .landing {
         height: 500px;
+    }
+    .stats .item {
+        font-size: 1rem;
     }
 }
 

@@ -8,7 +8,7 @@ const Footer = () => {
             <hr />
             <div className="container">
                 <div className="row" style={{ alignItems: "normal" }}>
-                    <div className="col brand-column">
+                    <div className="col-md brand-column">
                         <div className="brand-text-container">
                             <p className="h3">ARCHM Industries</p>
                         </div>
@@ -18,7 +18,7 @@ const Footer = () => {
                             <p id="copyright">&copy; Copyright 2020 ARCHM Industries</p>
                         </div>
                     </div>
-                    <div className="col item-column">
+                    <div className="col-md item-column">
                         <p className="h5 subtitle">About Us</p>
                         <div>
                             <ul className="footer-list">
@@ -30,7 +30,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col item-column">
+                    <div className="col-md item-column">
                         <p className="h5 subtitle">Services</p>
                         <div>
                             <ul className="footer-list">
@@ -42,7 +42,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col contact-column">
+                    <div className="col-md contact-column">
                         <div className="brand-text-container">
                             <p className="h5">Contact Us</p>
                         </div>

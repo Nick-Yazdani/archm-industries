@@ -7,7 +7,7 @@ const Contact = () => {
         <Layout>
             <div className="img-ovl">
                 <div className="container contact-content">
-                    <div className="row h-100">
+                    <div id="change-my-height" className="row h-100">
                         
                         <div className="col-md-3 contact-deets">
                             <p className="h3 contact-heading">Contact</p>

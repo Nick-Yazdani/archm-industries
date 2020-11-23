@@ -4,8 +4,9 @@
 
 .img-ovl {
     background: url('./contact-car.jpg');
-    background-repeat: stretch;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 1500px;
+    padding: 6rem 0rem;
 }
 
 .contact-deets {
@@ -77,4 +78,25 @@ textarea {
 .btn-ctl {
     justify-content: center;
     margin: 5% 0;
+}
+
+@media only screen and (max-width: 800px) {
+   .img-ovl {
+       padding: 20rem 0;
+   }
+   #change-my-height {
+       height: 0 !important;
+   }
+   .contact-deets {
+       height: auto;
+       text-align: center;
+       padding: 2rem;
+   }
+   .contact-content {
+       height: 600px;
+   }
+   .form-ctl {
+       height: auto;
+       padding: 2rem;
+   }
 }
