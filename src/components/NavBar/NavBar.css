@@ -6,9 +6,10 @@
 
 #mh {
   width: 100%;
+  height: 100px;
 }
 
-.main-navigation ul {
+.main-navigation #primary-menu {
   list-style-type: none;
   margin: 0;
   height: 100%;
@@ -16,7 +17,7 @@
   align-items: center
 }
 
-.main-navigation ul li a {
+.main-navigation #primary-menu li a {
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;
@@ -27,11 +28,10 @@
 
 .main-navigation {
   justify-content: flex-start;
-  height: 100px;
   align-items: center;
 }
 
-.main-navigation ul li {
+.main-navigation #primary-menu li {
   position: relative;
   font-weight: 500;
   height: 100%;
@@ -68,20 +68,205 @@
   align-items: center;
 }
 
-nav ul li a:hover {
+nav #primary-menu li a:hover {
   text-decoration: none;
-  background-color:rgba(255,255,255,0.8);
-  color: black;
+  color: rgba(255,0,0,0.9);
 }
 
 .menu-menu-container {
   height: 100%;
 }
 
-.active-link {
-  background-color:rgba(255,255,255,0.8);
+.active-link a {
+  color: rgba(255,0,0,0.9) !important;
 }
 
-.active-link a {
-  color: black !important;
+#site-branding {
+  padding: 0;
+  margin-left: 2rem;
+}
+
+#menuToggle
+{
+   /* display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;  */
+}
+.hamburger-column {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#secondary-menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-70%, 0);
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+  transition: all 0.7s;
+}
+
+#secondary-menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ #secondary-menu
+{
+  opacity: 1;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+  #mh {
+
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-navigation #primary-menu {
+    display: none;
+  }
+  .nav-ctr {
+    display: flex;
+  }
+  .site-branding {
+    position: absolute !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #site-navigation .menu-menu-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1596px) {
+  #site-branding {
+    display: block;
+    max-width: 100%;
+  }
+  #site-branding a {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #menuToggle {
+    display: none;
+  }
 }

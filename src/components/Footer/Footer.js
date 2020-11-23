@@ -13,7 +13,8 @@ const Footer = () => {
                             <p className="h3">ARCHM Industries</p>
                         </div>
                         <div>
-                            <p>Mon - Fri 9:00 - 17:00</p>
+                            <p>Mon - Fri</p>
+                            <p>9:00 - 17:00</p>
                             <p id="copyright">&copy; Copyright 2020 ARCHM Industries</p>
                         </div>
                     </div>
@@ -21,7 +22,7 @@ const Footer = () => {
                         <p className="h5 subtitle">About Us</p>
                         <div>
                             <ul className="footer-list">
-                                <li><Link to="#">About Us</Link></li>
+                                <li><Link to="/about">About Us</Link></li>
                                 <li><Link to="#">Our Services</Link></li>
                                 <li><Link to="#">Careers</Link></li>
                                 <li><Link to="#">Core Values</Link></li>

@@ -10,10 +10,10 @@ const Home = () => {
                 <div id="primary" className="content-area">
                     <main id="main" className="site-main">
                         <section className="landing">
-                            <div className="container-fluid caption-div"><h2 className="caption">LOREM IPSUM TEST TEXT HERE</h2><p className="caption">MORE LOREM IPSUM TEXT</p></div>
+                            <div className="container-fluid caption-div"><h2 className="caption">LOREM IPSUM TEST TEXT HERE<span className="span-caption">MORE LOREM IPSUM TEXT</span></h2></div>
                         </section>
                         <section className="help-business">
-                            <div className="container-fluid help-div"><h2 className="help-caption">LOREM IPSUM TEST TEXT HERE</h2><p className="help-caption">MORE LOREM IPSUM TEXT</p></div>
+                            <div className="container-fluid help-div"><h2 className="help-caption">LOREM IPSUM TEST TEXT HERE<span className="span-help-caption">MORE LOREM IPSUM TEXT</span></h2></div>
                         </section>
                         <div className="boxcontainer">
                             <section className="card-row-1">
