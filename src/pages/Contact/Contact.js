@@ -30,7 +30,7 @@ const Contact = () => {
                                         <textarea name="message" id="message" style={{ resize: "none" }} placeholder="Your message here..." />
                                     </div>
                                     <div className="row btn-ctl">
-                                        <button className="btn btn-dark" style={{ padding: "0.78rem", borderRadius: "20px" }}>Send Message</button>
+                                        <button id="special-btn" className="special-btn__white" style={{ padding: "0.78rem", borderRadius: "20px" }} onClick={(e) => {e.preventDefault()}}>Send Message</button>
                                     </div>
                                 </div>
                             </form>

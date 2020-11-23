@@ -13,10 +13,10 @@ const NavBar = props => {
                         <nav id="site-navigation" className="main-navigation col">
                             <div className="menu-menu-container">
                                 <ul id="primary-menu" className="menu">
-                                    <li id="menu-item-321" className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-321 ${props.history.location.pathname === "/" ? 'active-link' : null}`}><Link to="/">Home</Link></li>
-                                    <li id="menu-item-322" className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-322 two ${props.history.location.pathname === "/about" ? 'active-link' : null}`}><Link to="/about">About Us</Link></li>
-                                    <li id="menu-item-323" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-323 three"><Link to="#">Blog</Link></li>
-                                    <li id="menu-item-324" className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-324 four ${props.history.location.pathname === "/contact" ? 'active-link' : null}`}><Link to="/contact">Contact Us</Link></li>
+                                    <li id="menu-item-321" className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-321 ${props.history.location.pathname === "/" ? 'active-link' : null}`}><Link className="menu-link" to="/">Home</Link></li>
+                                    <li id="menu-item-322" className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-322 two ${props.history.location.pathname === "/about" ? 'active-link' : null}`}><Link className="menu-link" to="/about">About Us</Link></li>
+                                    <li id="menu-item-323" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-323 three"><Link className="menu-link" to="#">Blog</Link></li>
+                                    <li id="menu-item-324" className={`menu-item menu-item-type-post_type menu-item-object-page menu-item-324 four ${props.history.location.pathname === "/contact" ? 'active-link' : null}`}><Link className="menu-link" to="/contact">Contact Us</Link></li>
                                     <hr />
                                 </ul>
                             </div>

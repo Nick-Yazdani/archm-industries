@@ -77,7 +77,7 @@ nav #primary-menu li a:hover {
   height: 100%;
 }
 
-.active-link a {
+.active-link .menu-link {
   color: rgba(255,0,0,0.9) !important;
 }
 
